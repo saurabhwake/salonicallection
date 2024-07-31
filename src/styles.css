@@ -1,0 +1,498 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+  }
+  
+  .header {
+    background-color: rgb(248, 209, 209);
+    color: ffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+  }
+  
+  .product {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-image-thumbnails img {
+    
+    width: 50px;
+    height: auto;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .product-details {
+    margin-left: 20px;
+  }
+  
+  .product-details h2 {
+    margin: 0;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #28a745;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .sold, .rating, .description, .color {
+    margin: 10px 0;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart {
+    background-color: #ff7575;
+    color: white;
+  }
+  
+  .checkout-now {
+    background-color: #fbaca1;
+    color: white;
+  }
+  
+  .delivery-terms {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .ratings-reviews {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding-bottom: 10px;
+    background-color: #ddd;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #388e3c;
+  }
+  
+  .rating-stars {
+    font-size: 24px;
+    color: #388e3c;
+    margin-left: 5px;
+  }
+  
+  .rating-details {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  .rate-product {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .customer-feedback {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .feedback-tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    background-color: #e0f2f1;
+    color: #00695c;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .tag.neutral {
+    background-color: #fff3e0;
+    color: #ef6c00;
+  }
+  
+  .customer-images {
+    display: flex;
+    align-items: center;
+  }
+  
+  .customer-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 5px;
+    object-fit: cover;
+  }
+  
+  .more-images {
+    background-color: #e0e0e0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .review {
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-rating {
+    font-size: 16px;
+    color: #388e3c;
+    margin-right: 10px;
+  }
+  
+  .review-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .review-content {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .review-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  
+  
+/*...............................related products...............*/ 
+  .related-products-list {
+    display: flex;
+    gap: 10px;
+  }
+  .related-product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .related-product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .related-product-details {
+    padding: 10px;
+  }
+  
+  .related-product-details p {
+    margin: 5px 0;
+    color: #6c757d;
+  }
+  
+  .related-product-details p:first-child {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .related-product-details p:last-child {
+    font-size: 14px;
+  }
+  /*----------------------------------------------------------------------------------------------------------------------------------*/
+ /* Add header styles to your existing CSS file */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fadbe6 ;
+  border: 1px solid #fdfdfd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #e27ca2;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-bar .btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  background-color:transparent;
+  cursor: pointer;
+}
+
+.search-bar .search-button i,
+.search-bar .filter-button i,
+.search-bar .cart-button i {
+  font-size: 20px;
+}
+
+.search-bar .profile-button {
+  padding: 0;
+  margin-left: 10px;
+}
+
+.search-bar .profile-button .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.search-bar .btn:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+/*-------------------------------------------------------------------------------*/
+/* navigationBarStyles.css */
+/* Navbar.css */
+.navbar {
+  display: flex;
+  background-color: #f8d7da;
+  padding: 1px;
+  justify-content: space-around;
+}
+
+.nav-item {
+  position: relative;
+  padding: 5px 5px;
+  margin :0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #c82333;
+}
+
+.nav-item:hover {
+  background-color: #f5c6cb;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8d7da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown a {
+  padding: 10px 20px;
+  color: #c82333;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #f5c6cb;
+}
+
+/* _________________________________________________________________________________________________ */
+/* footer areas */
+.footer {
+  background-color: #f6cdcd;
+  color: #fff;
+  padding: 10px 20px;
+
+  font-family: Arial, sans-serif;
+}
+
+/*footer css*/
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-section a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-subscribe {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.footer-subscribe h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-subscribe input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #666;
+}
+
+.footer-language {
+  display: flex;
+  align-items: center;
+  color: #666;
+
+}
+
+.footer-language select {
+  margin-left: 10px;
+  padding: 5px;
+}
